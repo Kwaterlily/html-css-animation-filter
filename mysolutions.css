@@ -21,9 +21,48 @@
     border-radius: 100%;
 }
 
-.ex-3-square{
+.ex-3-square {
     transition: 3s;
 }
 
+/* ex. 4 */
+.ex-4-square:active { 
+    display: none;
+}
+
+.ex-4-square {
+    transition: 3s;
+}
+
+/* ex. 5 */
+.ex-5-square:hover {
+    transform: scale(3);
+}
+
+.ex-5-square {
+    transition: 3s;
+}
+
+.ex-5-square:active {
+    transform: scale(1.2);
+}
+
+/* ex. 6 */
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+.ex-6-img {
+    transition: 3s;
+}
+
+/* ex. 7  */
+.ex-7-img:hover {
+    filter: grayscale(1) contrast(1.3);
+}
+
+.ex-7-img {
+    transition: 3s;
+}
 
 
