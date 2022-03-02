@@ -1,15 +1,15 @@
 /* ex. 1 */
-.ex-1-square:hover {
+.ex-1-square:hover{
     background: red;
 }
 
-.ex-1-square {
+.ex-1-square{
     transition: 3s;
 }
 
 /* ex. 2 */
-.ex-2-square:hover {
-    width: 100%;
+.ex-2-square:active{
+    width: 70%;
 }
 
 .ex-2-square{
@@ -17,52 +17,149 @@
 }
 
 /* ex. 3 */
-.ex-3-square:hover {
+.ex-3-square:hover{
     border-radius: 100%;
 }
 
-.ex-3-square {
+.ex-3-square{
     transition: 3s;
 }
 
 /* ex. 4 */
-.ex-4-square:active { 
+/* .ex-4-square:active{ 
     display: none;
+} */
+.ex-4-square:hover{ 
+    opacity: 0;
 }
 
-.ex-4-square {
+.ex-4-square{
+    transition: 3s;
+}
+
+/* .ex 4 */
+.ex-4-square{
     transition: 3s;
 }
 
 /* ex. 5 */
-.ex-5-square:hover {
+.ex-5-square:hover{
     transform: scale(3);
 }
 
-.ex-5-square {
+.ex-5-square{
     transition: 3s;
 }
 
-.ex-5-square:active {
-    transform: scale(1.2);
+.ex-5-square:active{
+    transform: scale(1.2%);
 }
 
 /* ex. 6 */
-.ex-6-img:hover {
-    filter: grayscale(1);
+.ex-6-img:hover{
+    filter: grayscale(100%);
 }
 
-.ex-6-img {
+.ex-6-img{
     transition: 3s;
 }
 
 /* ex. 7  */
-.ex-7-img:hover {
+.ex-7-img:hover{
     filter: grayscale(1) contrast(1.3);
 }
 
-.ex-7-img {
+.ex-7-img{
     transition: 3s;
 }
 
+/* ex. 8 */
+.ex-8-img:hover{
+    filter: hue-rotate(90deg) blur(1px);
+    border-radius: 10%;
+}
 
+/* ex. 9 */
+.ex-9-img:hover{
+    filter: contrast(0.5) blur(1px);
+    border-radius: 5%;
+    transform: scale(0.2);
+}
+
+/* ex. 10 */
+
+.ex-10-icon{
+    animation-name: ex-10-icon ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+}
+
+@keyframes ex-10-icon {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* ex 11 */
+.ex-11-icon:hover{
+    animation-name: ex-11-icon ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+}
+@keyframes ex-11-icon {
+    0% {
+        transform:rotate(0deg);
+    }
+    75% {
+        transform:rotate(300deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+
+/* ex. 12 */
+.ex-12-top-white:hover, .ex-12-bottom-white:hover{
+    width: 150px;
+    height: 15px;
+    transition: 5s;
+  }
+
+  /* ex. 13 */
+.ex-13-button .ex-13-bottom-white{
+    animation-name: giro-completo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes giro-completo {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
